@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      .slide-container { 
+        width: 1280px; 
+        min-height: 720px; 
+        background: #F5F7FA; 
+        font-family: 'Inter', sans-serif;
+        color: #4A5568;
+        display: flex;
+        overflow: hidden;
+      }
+      .image-section {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #2C3E50;
+      }
+      .location-image {
+        width: 640px;
+        height: 720px;
+        object-fit: cover;
+      }
+      .content-section {
+        width: 50%;
+        padding-top: 100px;
+        padding-left: 60px;
+        padding-right: 60px;
+        display: flex;
+        flex-direction: column;
+      }
+      .title {
+        font-family: 'Inter', sans-serif;
+        font-size: 48px;
+        color: #2C3E50;
+        margin-bottom: 40px;
+        line-height: 1.2;
+      }
+      .address-box {
+        margin-bottom: 40px;
+      }
+      .address-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 25px;
+      }
+      .address-item i {
+        font-size: 24px;
+        color: #38B2AC;
+        margin-right: 20px;
+        padding-top: 5px;
+      }
+      .address-text {
+        font-size: 18px;
+        line-height: 1.6;
+      }
+      .reference-tag {
+        display: inline-block;
+        background: #EDF2F7;
+        color: #2C3E50;
+        padding: 8px 15px;
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        margin-top: 10px;
+        border-left: 4px solid #38B2AC;
+      }
+      .map-button {
+        display: inline-flex;
+        align-items: center;
+        background: #38B2AC;
+        color: white;
+        padding: 18px 30px;
+        text-decoration: none;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        width: fit-content;
+        margin-top: 20px;
+      }
+      .map-button i {
+        margin-right: 15px;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="image-section">
+            <img src="https://private-us-east-1.manuscdn.com/sessionFile/49wAMyw9Xbj1PYSTzNPPQB/sandbox/slides_resource_ima6ivjlautoyxseydv4h-00aad2f5-e2b-prod-us2_1770576392619_na1fn_L2hvbWUvdWJ1bnR1L3VwbG9hZC9zZWFyY2hfaW1hZ2VzL3VraVk4M1BYSEFBbA.jpg?x-oss-process=image/resize,w_1560,h_1560/format,webp&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvNDl3QU15dzlYYmoxUFlTVHpOUFBRQi9zYW5kYm94L3NsaWRlc19yZXNvdXJjZV9pbWE2aXZqbGF1dG95eHNleWR2NGgtMDBhYWQyZjUtZTJiLXByb2QtdXMyXzE3NzA1NzYzOTI2MTlfbmExZm5fTDJodmJXVXZkV0oxYm5SMUwzVndiRzloWkM5elpXRnlZMmhmYVcxaFoyVnpMM1ZyYVZrNE0xQllTRUZCYkEuanBnP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTU2MCxoXzE1NjAvZm9ybWF0LHdlYnAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=U3nax8Xyh6ew3ATgKLbDeVakNvFMK4Kuh9YciXc~bgS6i8LnzjfuDwm6oNWP5nSmudiNdZwivJGftQcy8JKRf2MAO-a1QMU3RHCzM0m5LTG8O9tUuqngp-rIrK42XzD65zou6SZ4InC1VgsNOpu7f~J-R4b-pidiN1UVD6EjjxRrVJ2KDb2Jgbzprs~VLc6C1g75UdFB-fBRgj1zz-cob9hZ1kiW4uYj5QKGyeQb9D73fDtThDHwY5R038EcjxYUh4yCru-V3cQ6tUED5z3n2hx9zBflaj-wjHd466ElyBkugtbYGcSiO3pYRlxN~ekm2wtFf-VAgVKLoJASVZ17tg__" class="location-image" alt="Represa de Mairiporã">
+        </div>
+        
+        <div class="content-section">
+            <h2 class="title">Como Chegar: O caminho para o seu refúgio</h2>
+            
+            <div class="address-box">
+                <div class="address-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="address-text">
+                        <strong>Endereço:</strong><br>
+                        Estrada Armando Barbosa de Almeida, 2955<br>
+                        Caceia, Mairiporã/SP
+                    </div>
+                </div>
+                
+                <div class="address-item">
+                    <i class="fas fa-info-circle"></i>
+                    <div class="address-text">
+                        <strong>Ponto de Referência:</strong><br>
+                        Procure pelo muro amarelo e portão azul.<br>
+                        <span class="reference-tag">Toque a campainha ao chegar</span>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="https://www.google.com/maps/search/?api=1&query=Estrada+Armando+Barbosa+de+Almeida+2955,+Mairipor%C3%A3,+SP" target="_blank" class="map-button">
+                <i class="fas fa-directions"></i> Abrir no Google Maps
+            </a>
+        </div>
+        <a href="menu.html" style="display: block; text-align: center; margin-top: 20px; text-decoration: none; color: #38B2AC; font-weight: 600;">← Voltar ao Menu</a>
+    </div>
+</body>
+</html>

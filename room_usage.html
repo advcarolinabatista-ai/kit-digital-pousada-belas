@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      .slide-container { 
+        width: 1280px; 
+        min-height: 720px; 
+        background: #F5F7FA; 
+        font-family: 'Inter', sans-serif;
+        color: #4A5568;
+        display: flex;
+        overflow: hidden;
+      }
+      .image-side {
+        width: 45%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #2C3E50;
+      }
+      .image-side img {
+        width: 576px;
+        height: 720px;
+        object-fit: cover;
+      }
+      .content-side {
+        width: 55%;
+        padding-top: 80px;
+        padding-left: 60px;
+        padding-right: 60px;
+        display: flex;
+        flex-direction: column;
+      }
+      .title {
+        font-family: 'Playfair Display', serif;
+        font-size: 48px;
+        color: #2C3E50;
+        line-height: 1.2;
+        margin-bottom: 40px;
+      }
+      .tech-section {
+        margin-bottom: 40px;
+      }
+      .section-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .section-header i {
+        font-size: 28px;
+        color: #38B2AC;
+        margin-right: 15px;
+      }
+      .section-title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+        color: #2C3E50;
+      }
+      .command-list {
+        background: white;
+        padding-top: 20px;
+        padding-left: 25px;
+        padding-right: 25px;
+        border-left: 4px solid #38B2AC;
+        margin-bottom: 20px;
+      }
+      .command-item {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        color: #4A5568;
+        margin-bottom: 10px;
+        font-style: italic;
+      }
+      .equipment-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+      .equipment-item {
+        background: white;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border: 1px solid #E2E8F0;
+      }
+      .equipment-name {
+        font-weight: 600;
+        color: #2C3E50;
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+      }
+      .equipment-name i {
+        margin-right: 10px;
+        color: #38B2AC;
+      }
+      .equipment-desc {
+        font-size: 14px;
+        line-height: 1.4;
+      }
+      .note {
+        margin-top: 30px;
+        font-size: 14px;
+        color: #718096;
+        font-style: italic;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="image-side">
+            <img src="https://private-us-east-1.manuscdn.com/sessionFile/49wAMyw9Xbj1PYSTzNPPQB/sandbox/slides_resource_ima6ivjlautoyxseydv4h-00aad2f5-e2b-prod-us2_1770576412841_na1fn_L2hvbWUvdWJ1bnR1L3VwbG9hZC9zZWFyY2hfaW1hZ2VzLzR3UENjRjFtS2RmWg.jpg?x-oss-process=image/resize,w_1560,h_1560/format,webp&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvNDl3QU15dzlYYmoxUFlTVHpOUFBRQi9zYW5kYm94L3NsaWRlc19yZXNvdXJjZV9pbWE2aXZqbGF1dG95eHNleWR2NGgtMDBhYWQyZjUtZTJiLXByb2QtdXMyXzE3NzA1NzY0MTI4NDFfbmExZm5fTDJodmJXVXZkV0oxYm5SMUwzVndiRzloWkM5elpXRnlZMmhmYVcxaFoyVnpMelIzVUVOalJqRnRTMlJtV2cuanBnP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTU2MCxoXzE1NjAvZm9ybWF0LHdlYnAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=fzxaz9848qlp7F7cMyrYrSkg2hUNefG3kuSsnpmjtrEO~a5OSwMQAlTH9cBfZza7~BCp9wHvd0yAEaiC~Hbo1E-jNgNE953HjeC8HZEDCwXZ0CbR3TZvGkg01mpj38pkUuVyVZOEypb5V433aH5dcF27WYnJufKMnPIPPOR-SpGl-4TOYg4ZHcYSc3QHAW1opo12e~BtTK0syubXlwYJlx718ap4owCkb5GNS13SwI51HUOZLicZW5QQN4-7-xWzHBJeSF3bU8bFs~gdhTpOAgvBbJHY51hShRzGYexgoHaVH2xBtbWIpnQ7yYEAFNZUNauUifkfYPHzM87eEz~ciQ__" alt="Alexa Smart Home">
+        </div>
+        <div class="content-side">
+            <h2 class="title">Tecnologia e Conforto</h2>
+            
+            <div class="tech-section">
+                <div class="section-header">
+                    <i class="fas fa-microphone-alt"></i>
+                    <h3 class="section-title">Assistente Virtual Alexa</h3>
+                </div>
+                    <p style="margin-bottom: 15px; font-size: 16px;">Utilize comandos de voz para facilitar sua experiência:</p>
+                <div class="command-list">
+                    <p class="command-item">"Alexa, que horas são?"</p>
+                    <p class="command-item">"Alexa, toque uma música relaxante"</p>
+                    <p class="command-item">"Alexa, qual a previsão do tempo?"</p>
+                </div>
+            </div>
+
+            <div class="equipment-grid">
+                <div class="equipment-item">
+                    <div class="equipment-name"><i class="fas fa-snowflake"></i> Climatização</div>
+                    <p class="equipment-desc">Ajuste o ar-condicionado pelo controle remoto no quarto.</p>
+                </div>
+                <div class="equipment-item">
+                    <div class="equipment-name"><i class="fas fa-tv"></i> TV Smart</div>
+                    <p class="equipment-desc">Acesso a Netflix e YouTube via controle remoto.</p>
+                </div>
+            </div>
+
+            <p class="note">
+                * A disponibilidade da Alexa varia conforme o quarto. Em caso de dúvidas, fale com a Recepção.
+            </p>
+        </div>
+        <a href="menu.html" style="display: block; text-align: center; margin-top: 20px; text-decoration: none; color: #38B2AC; font-weight: 600;">← Voltar ao Menu</a>
+    </div>
+</body>
+</html>

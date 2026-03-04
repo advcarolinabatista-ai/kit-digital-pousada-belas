@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      .slide-container { 
+        width: 1280px; 
+        min-height: 720px; 
+        background: #F5F7FA; 
+        font-family: 'Inter', sans-serif;
+        color: #4A5568;
+        display: flex;
+        overflow: hidden;
+      }
+      .image-side {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #2C3E50;
+      }
+      .image-side img {
+        width: 640px;
+        height: 720px;
+        object-fit: cover;
+      }
+      .content-side {
+        width: 50%;
+        padding-top: 80px;
+        padding-left: 60px;
+        padding-right: 60px;
+        display: flex;
+        flex-direction: column;
+      }
+      .title {
+        font-family: 'Inter', sans-serif;
+        font-size: 48px;
+        color: #2C3E50;
+        line-height: 1.2;
+        margin-bottom: 20px;
+      }
+      .subtitle {
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        color: #38B2AC;
+        letter-spacing: 1px;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+      }
+      .activities-list {
+        list-style: none;
+        margin-bottom: 40px;
+      }
+      .activity-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        font-size: 18px;
+      }
+      .activity-item i {
+        width: 30px;
+        color: #38B2AC;
+        margin-right: 15px;
+        font-size: 20px;
+      }
+      .info-box {
+        background: white;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-left: 4px solid #38B2AC;
+      }
+      .info-title {
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        color: #2C3E50;
+        margin-bottom: 10px;
+      }
+      .info-text {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+      .time-tag {
+        display: inline-block;
+        background: #38B2AC;
+        color: white;
+        padding: 5px 15px;
+        border-radius: 4px;
+        font-weight: 600;
+        margin-top: 10px;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="image-side">
+            <img src="https://private-us-east-1.manuscdn.com/sessionFile/49wAMyw9Xbj1PYSTzNPPQB/sandbox/slides_resource_ima6ivjlautoyxseydv4h-00aad2f5-e2b-prod-us2_1770576392619_na1fn_L2hvbWUvdWJ1bnR1L3VwbG9hZC9zZWFyY2hfaW1hZ2VzL0RnNEplV2h2TkZVcg.jpg?x-oss-process=image/resize,w_1560,h_1560/format,webp&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvNDl3QU15dzlYYmoxUFlTVHpOUFBRQi9zYW5kYm94L3NsaWRlc19yZXNvdXJjZV9pbWE2aXZqbGF1dG95eHNleWR2NGgtMDBhYWQyZjUtZTJiLXByb2QtdXMyXzE3NzA1NzYzOTI2MTlfbmExZm5fTDJodmJXVXZkV0oxYm5SMUwzVndiRzloWkM5elpXRnlZMmhmYVcxaFoyVnpMMFJuTkVwbFYyaDJUa1pWY2cuanBnP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTU2MCxoXzE1NjAvZm9ybWF0LHdlYnAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=nUA8~UuM6co9ozR-7TffjIi70R9ML1KQAvjaAz67fYY3REc4OUDGfvmeWDPS8A~RMclm52iHubnmtuE1bTlYjPoHva47FVLmhy76l7BFDy70q17tliZD9bdeC8l2gt1P0Yssr7M6FDwArsZxL6Py87qPQ0BhFE0g9eU0N31uRXmXTCNXYBy-sE~NQnIGGiZto4ld7L~QX-ANPuwO-8u7kGM7TFLOg8v3BWZS-4J~fHSuDn7zPX2uXDe-uYIEndUNkLtG8otGq6SwWZk4Lc3f0pcANB5fbHTOwLSva9BgcRjOE58SAjkudJOD9N~TqHqXVfBuOgdZ9ntzJUhtMeDFQg__" alt="Atividades Aquáticas">
+        </div>
+        <div class="content-side">
+            <h2 class="title">Atividades Aquáticas</h2>
+            <p class="subtitle">Aventura e lazer direto na represa</p>
+            
+            <ul class="activities-list">
+                <li class="activity-item"><i class="fas fa-ship"></i> Jet ski e Passeios de barco</li>
+                <li class="activity-item"><i class="fas fa-swimmer"></i> Stand up paddle</li>
+                <li class="activity-item"><i class="fas fa-anchor"></i> Caiaque e Pedalinho</li>
+            </ul>
+
+            <div class="info-box">
+                <h4 class="info-title">Horário de Funcionamento</h4>
+                <p class="info-text">Todas as atividades estão disponíveis diariamente.</p>
+                <span class="time-tag">10h às 17h</span>
+                
+                <div style="margin-top: 25px;">
+                    <h4 class="info-title">Segurança e Reservas</h4>
+                    <p class="info-text">Consulte regras e valores em nosso site. Recomendamos reservar com antecedência.</p>
+                    <a href="https://www.belasaguasmairipora.com.br/atividades-aquaticas" target="_blank" style="display: block; margin-top: 10px; text-decoration: none; color: #38B2AC; font-weight: 600;">Ver detalhes no site</a>
+                </div>
+            </div>
+        </div>
+        <a href="menu.html" style="display: block; text-align: center; margin-top: 20px; text-decoration: none; color: #38B2AC; font-weight: 600;">← Voltar ao Menu</a>
+    </div>
+</body>
+</html>

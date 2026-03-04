@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?ffamily=Montserrat:wght@400;600;700&family=Inter:wght@400;600;700&display=swapwap" rel="stylesheet">
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      .slide-container { 
+        width: 1280px; 
+        min-height: 720px; 
+        background: #F5F7FA; 
+        font-family: 'Inter', sans-serif;
+        color: #4A5568;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .header {
+        padding-top: 60px;
+        text-align: center;
+      }
+      .title {
+        font-family: 'Inter', sans-serif;
+        font-size: 48px;
+        color: #2C3E50;
+        margin-bottom: 10px;
+      }
+      .subtitle {
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        color: #38B2AC;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+      .wifi-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+      }
+      .wifi-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        width: 1000px;
+      }
+      .network-box {
+        background: white;
+        border: 1px solid #E2E8F0;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        min-height: 180px;
+        display: flex;
+        flex-direction: column;
+      }
+      .network-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+      .network-header i {
+        font-size: 24px;
+        color: #38B2AC;
+        margin-right: 15px;
+      }
+      .network-name {
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        color: #2C3E50;
+      }
+      .password-label {
+        font-size: 14px;
+        color: #718096;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 5px;
+      }
+      .password-value {
+        font-family: 'Inter', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        color: #38B2AC;
+      }
+      .quote-container {
+        margin-top: 60px;
+        text-align: center;
+        max-width: 600px;
+      }
+      .quote-text {
+        font-family: 'Inter', sans-serif;
+        font-size: 28px;
+        font-style: italic;
+        color: #2C3E50;
+        margin-bottom: 10px;
+      }
+      .quote-subtext {
+        font-size: 16px;
+        color: #718096;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2 class="title">Conectividade</h2>
+            <p class="subtitle">Mantenha-se conectado enquanto relaxa</p>
+        </div>
+        
+        <div class="wifi-content">
+            <div class="wifi-grid">
+                <div class="network-box">
+                    <div class="network-header">
+                        <i class="fas fa-wifi"></i>
+                        <span class="network-name">Torres Clientes / Container</span>
+                    </div>
+                    <span class="password-label">Senha</span>
+                    <span class="password-value">clientes</span>
+                </div>
+                
+                <div class="network-box">
+                    <div class="network-header">
+                        <i class="fas fa-wifi"></i>
+                        <span class="network-name">Família Barros</span>
+                    </div>
+                    <span class="password-label">Senha</span>
+                    <span class="password-value">edu200830</span>
+                </div>
+                
+                <div class="network-box">
+                    <div class="network-header">
+                        <i class="fas fa-wifi"></i>
+                        <span class="network-name">Chalés</span>
+                    </div>
+                    <span class="password-label">Senha</span>
+                    <span class="password-value">chale2008</span>
+                </div>
+
+                <div class="network-box" style="background: #2C3E50; border: none;">
+                    <div class="network-header">
+                        <i class="fas fa-info-circle" style="color: #38B2AC;"></i>
+                        <span class="network-name" style="color: white;">Suporte</span>
+                    </div>
+                    <p style="color: rgba(255,255,255,0.8); font-size: 14px; line-height: 1.5;">
+                        Caso tenha dificuldades de conexão, procure nossa equipe na recepção para auxílio imediato.
+                    </p>
+                </div>
+            </div>
+
+            <div class="quote-container">
+                <p class="quote-text">"O OFF é necessário"</p>
+                <p class="quote-subtext">Mas estamos prontos para quando você precisar do ON.</p>
+            </div>
+        </div>
+        <a href="menu.html" style="display: block; text-align: center; margin-top: 20px; text-decoration: none; color: #38B2AC; font-weight: 600;">← Voltar ao Menu</a>
+    </div>
+</body>
+</html>

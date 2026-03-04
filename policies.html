@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      .slide-container { 
+        width: 1280px; 
+        min-height: 720px; 
+        background: #F5F7FA; 
+        font-family: 'Inter', sans-serif;
+        color: #4A5568;
+        overflow: hidden;
+      }
+      .header {
+        padding-top: 60px;
+        padding-left: 80px;
+        padding-right: 80px;
+        text-align: left;
+      }
+      .title {
+        font-family: 'Inter', sans-serif;
+        font-size: 48px;
+        color: #2C3E50;
+        margin-bottom: 15px;
+      }
+      .intro-text {
+        font-size: 18px;
+        line-height: 1.6;
+        max-width: 800px;
+        margin-bottom: 40px;
+      }
+      .policies-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding-left: 80px;
+        padding-right: 80px;
+      }
+      .policy-block {
+        background: white;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border: 1px solid #E2E8F0;
+        display: flex;
+        flex-direction: column;
+        min-height: 200px;
+      }
+      .policy-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+      .policy-header i {
+        font-size: 24px;
+        color: #38B2AC;
+        margin-right: 15px;
+      }
+      .policy-title {
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        color: #2C3E50;
+      }
+      .policy-desc {
+        font-size: 15px;
+        line-height: 1.5;
+        color: #4A5568;
+      }
+      .footer-cta {
+        padding-top: 40px;
+        padding-left: 80px;
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        color: #38B2AC;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2 class="title">Políticas Internas</h2>
+            <p class="intro-text">
+                Criamos políticas claras para assegurar que todos os hóspedes tenham uma experiência harmoniosa, 
+                garantindo o conforto e a boa convivência em nosso refúgio.
+            </p>
+        </div>
+        
+        <div class="policies-grid">
+            <a href="https://www.belasaguasmairipora.com.br/nossa-politica/politica-hospedagem" target="_blank" style="text-decoration: none; color: inherit;">
+                <div class="policy-block">
+                    <div class="policy-header">
+                        <i class="fas fa-hotel"></i>
+                        <h3 class="policy-title">Hospedagem</h3>
+                    </div>
+                    <p class="policy-desc">
+                        Regras gerais para uma estadia tranquila e segura, focadas no respeito mútuo e na preservação do ambiente da pousada.
+                    </p>
+                </div>
+            </a>
+            
+            <a href="https://www.belasaguasmairipora.com.br/nossa-politica/c%C3%B3pia-pet" target="_blank" style="text-decoration: none; color: inherit;">
+                <div class="policy-block">
+                    <div class="policy-header">
+                        <i class="fas fa-child"></i>
+                        <h3 class="policy-title">Crianças</h3>
+                    </div>
+                    <p class="policy-desc">
+                        Informações essenciais sobre acomodação, segurança e áreas de lazer dedicadas para garantir a diversão dos pequenos.
+                    </p>
+                </div>
+            </a>
+            
+            <a href="https://www.belasaguasmairipora.com.br/nossa-politica/politica-pet" target="_blank" style="text-decoration: none; color: inherit;">
+                <div class="policy-block">
+                    <div class="policy-header">
+                        <i class="fas fa-paw"></i>
+                        <h3 class="policy-title">PET</h3>
+                    </div>
+                    <p class="policy-desc">
+                        Somos amigos dos animais! Confira as regras específicas para trazer seu melhor amigo e garantir o conforto de todos.
+                    </p>
+                </div>
+            </a>
+            
+            <a href="https://www.belasaguasmairipora.com.br/nossa-politica/politica-day-use" target="_blank" style="text-decoration: none; color: inherit;">
+                <div class="policy-block">
+                    <div class="policy-header">
+                        <i class="fas fa-sun"></i>
+                        <h3 class="policy-title">Day Use</h3>
+                    </div>
+                    <p class="policy-desc">
+                        Informações para visitantes que desejam aproveitar nossa estrutura de lazer por um dia, sem pernoite.
+                    </p>
+                </div>
+            </a>
+        </div>
+
+        <a href="https://www.belasaguasmairipora.com.br/nossa-politica" target="_blank" style="text-decoration: none;">
+            <div class="footer-cta">
+                Consulte os detalhes completos em nosso site oficial
+            </div>
+        </a>
+        <a href="menu.html" style="display: block; text-align: center; margin-top: 20px; text-decoration: none; color: #38B2AC; font-weight: 600;">← Voltar ao Menu</a>
+    </div>
+</body>
+</html>

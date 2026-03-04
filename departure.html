@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      .slide-container { 
+        width: 1280px; 
+        min-height: 720px; 
+        background: #F5F7FA; 
+        font-family: 'Inter', sans-serif;
+        color: #4A5568;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .header {
+        padding-top: 80px;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-bottom: 32px; /* reduced from 50px to save height */
+      }
+      .title {
+        font-family: 'Inter', sans-serif;
+        font-size: 48px;
+        color: #2C3E50;
+        margin-bottom: 15px;
+      }
+      .intro-text {
+        font-size: 20px;
+        line-height: 1.6;
+        color: #4A5568;
+      }
+      .checklist-container {
+        padding-left: 100px;
+        padding-right: 100px;
+        flex: 1;
+      }
+      .checklist-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        background: white;
+        padding-top: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border: 1px solid #E2E8F0;
+        min-height: 80px;
+      }
+      .checklist-item i {
+        font-size: 24px;
+        color: #38B2AC;
+        margin-right: 25px;
+      }
+      .item-text {
+        font-size: 18px;
+        font-weight: 500;
+        color: #2C3E50;
+      }
+      .footer-info {
+        padding-top: 40px;
+        padding-left: 100px;
+        padding-right: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .time-alert {
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        color: #E53E3E;
+        display: flex;
+        align-items: center;
+      }
+      .time-alert i {
+        margin-right: 10px;
+      }
+      .thanks-text {
+        font-family: 'Inter', sans-serif;
+        font-size: 22px;
+        font-style: italic;
+        color: #2C3E50;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2 class="title">Antes de Partir</h2>
+            <p class="intro-text">Para garantir um bom encerramento da sua estadia, pedimos por gentileza que:</p>
+        </div>
+        
+        <div class="checklist-container">
+            <div class="checklist-item">
+                <i class="fas fa-check-circle"></i>
+                <span class="item-text">Desligue o ar-condicionado e todas as luzes da acomodação.</span>
+            </div>
+            <div class="checklist-item">
+                <i class="fas fa-check-circle"></i>
+                <span class="item-text">Verifique se não esqueceu objetos pessoais em gavetas ou armários.</span>
+            </div>
+            <div class="checklist-item">
+                <i class="fas fa-check-circle"></i>
+                <span class="item-text">Tranque o quarto ao sair e entregue as chaves na Recepção.</span>
+            </div>
+            <div class="checklist-item">
+                <i class="fas fa-check-circle"></i>
+                <span class="item-text">Passe na Recepção para conferência de consumo e encerramento.</span>
+            </div>
+        </div>
+
+        <div class="footer-info">
+            <div class="time-alert">
+                <i class="fas fa-clock"></i> A diária se encerra às 12h
+            </div>
+            <div class="thanks-text">Agradecemos a sua colaboração!</div>
+        </div>
+        <a href="menu.html" style="display: block; text-align: center; margin-top: 20px; text-decoration: none; color: #38B2AC; font-weight: 600;">← Voltar ao Menu</a>
+    </div>
+</body>
+</html>

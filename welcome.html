@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?famfamily=Montserrat:wght@400;600;700&family=Inter:wght@400;600;700&display=swapp" rel="stylesheet">
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      .slide-container { 
+        width: 1280px; 
+        min-height: 720px; 
+        background: #F5F7FA; 
+        display: flex;
+        font-family: 'Inter', sans-serif;
+        color: #4A5568;
+        overflow: hidden;
+      }
+      .left-content {
+        width: 60%;
+        padding-top: 80px;
+        padding-left: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .right-visual {
+        width: 40%;
+        background: #2C3E50;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+      .headline {
+        font-family: 'Inter', sans-serif;
+        font-size: 64px;
+        color: #2C3E50;
+        line-height: 1.1;
+        margin-bottom: 30px;
+      }
+      .welcome-text {
+        font-size: 22px;
+        line-height: 1.6;
+        max-width: 600px;
+        margin-bottom: 40px;
+      }
+      .cta-button {
+        display: inline-flex;
+        align-items: center;
+        background: #38B2AC;
+        color: white;
+        padding: 18px 35px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        width: fit-content;
+        box-shadow: 0 10px 20px rgba(56, 178, 172, 0.2);
+      }
+      .cta-button i {
+        margin-left: 15px;
+      }
+      .social-icons {
+        display: flex;
+        gap: 30px;
+        margin-top: 40px;
+      }
+      .social-icon {
+        color: white;
+        font-size: 32px;
+        transition: transform 0.3s;
+      }
+      .logo-placeholder {
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-size: 40px;
+        margin-bottom: 50px;
+        text-align: center;
+        border-bottom: 2px solid #38B2AC;
+        padding-bottom: 10px;
+      }
+      .accent-shape {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100px;
+        height: 100px;
+        background: #38B2AC;
+        clip-path: polygon(100% 0, 0 0, 100% 100%);
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="left-content">
+            <h1 class="headline">Seja bem-vindo(a) à Pousada Belas Mairiporã!</h1>
+            <p class="welcome-text">
+                Nos sentimos honrados por você ter escolhido nossa pousada para seus dias de descanso. 
+                Estamos aqui para garantir que sua estadia seja simplesmente incrível e memorável.
+            </p>
+            <a href="menu.html" class="cta-button">
+                Ver Menu Principal <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+        <div class="right-visual">
+            <div class="accent-shape"></div>
+            <div class="logo-placeholder">
+                Belas Mairiporã
+                <div style="font-size: 14px; font-family: 'Montserrat'; letter-spacing: 2px; margin-top: 5px;">POUSADA & LAZER</div>
+            </div>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="social-icon"><i class="fas fa-globe"></i></a>
+            </div>
+            <p style="color: rgba(255,255,255,0.6); margin-top: 30px; font-family: 'Montserrat'; font-size: 14px;">@belasmairipora</p>
+        </div>
+    </div>
+</body>
+</html>

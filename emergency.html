@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      .slide-container { 
+        width: 1280px; 
+        min-height: 720px; 
+        background: #F5F7FA; 
+        font-family: 'Inter', sans-serif;
+        color: #4A5568;
+        display: flex;
+        overflow: hidden;
+      }
+      .image-side {
+        width: 40%;
+        background: #2C3E50;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .image-side img {
+        width: 512px;
+        height: 720px;
+        object-fit: cover;
+      }
+      .content-side {
+        width: 60%;
+        padding-top: 80px;
+        padding-left: 60px;
+        padding-right: 60px;
+        display: flex;
+        flex-direction: column;
+      }
+      .title {
+        font-family: 'Inter', sans-serif;
+        font-size: 48px;
+        color: #2C3E50;
+        margin-bottom: 10px;
+      }
+      .subtitle {
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        color: #E53E3E;
+        letter-spacing: 1px;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+      }
+      .emergency-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin-bottom: 40px;
+      }
+      .emergency-item {
+        background: white;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-left: 4px solid #E53E3E;
+        display: flex;
+        align-items: center;
+        min-height: 80px;
+      }
+      .emergency-item i {
+        font-size: 24px;
+        color: #E53E3E;
+        margin-right: 20px;
+      }
+      .emergency-info {
+        display: flex;
+        flex-direction: column;
+      }
+      .emergency-label {
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        color: #718096;
+      }
+      .emergency-number {
+        font-family: 'Inter', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        color: #2C3E50;
+      }
+      .hospital-box {
+        background: #EDF2F7;
+        padding-top: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-bottom: 30px;
+      }
+      .hospital-title {
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        color: #2C3E50;
+        margin-bottom: 5px;
+      }
+      .hospital-name {
+        font-size: 18px;
+        color: #4A5568;
+        line-height: 1.4;
+      }
+      .plantao-note {
+        font-size: 15px;
+        line-height: 1.6;
+        color: #718096;
+        font-style: italic;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="image-side">
+            <img src="./images/hospital_anjo_gabriel.jpg" alt="Hospital de Emergência">
+        </div>
+        <div class="content-side">
+            <h2 class="title">Segurança e Emergência</h2>
+            <p class="subtitle">Sua tranquilidade é nossa prioridade</p>
+            
+            <div class="emergency-list">
+                <div class="emergency-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div class="emergency-info">
+                        <span class="emergency-label">Polícia</span>
+                        <span class="emergency-number">190</span>
+                    </div>
+                </div>
+                <div class="emergency-item">
+                    <i class="fas fa-ambulance"></i>
+                    <div class="emergency-info">
+                        <span class="emergency-label">SAMU</span>
+                        <span class="emergency-number">192</span>
+                    </div>
+                </div>
+                <div class="emergency-item">
+                    <i class="fas fa-fire-extinguisher"></i>
+                    <div class="emergency-info">
+                        <span class="emergency-label">Bombeiros</span>
+                        <span class="emergency-number">193</span>
+                    </div>
+                </div>
+                <div class="emergency-item">
+                    <i class="fas fa-user-shield"></i>
+                    <div class="emergency-info">
+                        <span class="emergency-label">Recepção</span>
+                        <span class="emergency-number">Dirija-se à Recepção</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hospital-box">
+                <h4 class="hospital-title"><i class="fas fa-hospital-h" style="color: #38B2AC; margin-right: 10px;"></i> Hospital mais próximo</h4>
+                <p class="hospital-name"><a href="https://www.google.com/maps/search/?api=1&query=Hospital+Anjo+Gabriel+Rua+S%C3%A3o+Judas+Tadeu+200+Mairipor%C3%A3+SP" target="_blank" style="text-decoration: none; color: inherit;">Hospital Anjo Gabriel – Mairiporã/SP</a><br>Atendimento 24 horas</p>
+            </div>
+
+            <p class="plantao-note">
+                <strong>Plantão da Pousada (Madrugada):</strong> Verifique com a Recepção quem é o responsável do dia para garantir sua segurança e privacidade.
+            </p>
+        </div>
+        <a href="menu.html" style="display: block; text-align: center; margin-top: 20px; text-decoration: none; color: #38B2AC; font-weight: 600;">← Voltar ao Menu</a>
+    </div>
+</body>
+</html>

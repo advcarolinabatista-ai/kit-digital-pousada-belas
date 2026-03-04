@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2family=Montserrat:wght@400;600;700&family=Inter:wght@400;600;700&display=swapel="stylesheet">
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      .slide-container { 
+        width: 1280px; 
+        min-height: 720px; 
+        background: #F5F7FA; 
+        font-family: 'Inter', sans-serif;
+        color: #4A5568;
+        overflow: hidden;
+      }
+      .header {
+        padding-top: 60px;
+        text-align: center;
+      }
+      .title {
+        font-family: 'Inter', sans-serif;
+        font-size: 48px;
+        color: #2C3E50;
+        margin-bottom: 10px;
+      }
+      .content-wrapper {
+        display: flex;
+        padding-top: 60px;
+        padding-left: 80px;
+        padding-right: 80px;
+        gap: 60px;
+      }
+      .info-column {
+        flex: 1;
+        background: white;
+        padding-top: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
+        border: 1px solid #E2E8F0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        min-height: 450px;
+      }
+      .icon-circle {
+        width: 100px;
+        height: 100px;
+        background: #F5F7FA;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      .icon-circle i {
+        font-size: 40px;
+        color: #38B2AC;
+      }
+      .section-title {
+        font-family: 'Inter', sans-serif;
+        font-size: 24px;
+        color: #2C3E50;
+        margin-bottom: 10px;
+      }
+      .time-highlight {
+        font-family: 'Inter', sans-serif;
+        font-size: 56px;
+        color: #38B2AC;
+        margin-bottom: 20px;
+      }
+      .description {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #4A5568;
+      }
+      .footer-note {
+        padding-top: 40px;
+        text-align: center;
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        color: #718096;
+        font-style: italic;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2 class="title">Check-in & Check-out</h2>
+        </div>
+        
+        <div class="content-wrapper">
+            <div class="info-column">
+                <div class="icon-circle"><i class="fas fa-sign-in-alt"></i></div>
+                <h3 class="section-title">Check-in</h3>
+                <div class="time-highlight">15:00</div>
+                <p class="description">
+                    Sua acomodação estará disponível a partir das 15h. 
+                    Aproveite nossas áreas externas, piscina e represa a partir das 10h no dia da chegada.
+                </p>
+            </div>
+            
+            <div class="info-column">
+                <div class="icon-circle"><i class="fas fa-sign-out-alt"></i></div>
+                <h3 class="section-title">Check-out</h3>
+                <div class="time-highlight">12:00</div>
+                <p class="description">
+                    Pedimos que o quarto seja liberado até às 12h. 
+                    Você é bem-vindo para continuar desfrutando da pousada até às 17h.
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-note">
+            * Chegadas após às 20h devem ser comunicadas previamente.
+        </div>
+        <a href="menu.html" style="display: block; text-align: center; margin-top: 20px; text-decoration: none; color: #38B2AC; font-weight: 600;">← Voltar ao Menu</a>
+    </div>
+</body>
+</html>
